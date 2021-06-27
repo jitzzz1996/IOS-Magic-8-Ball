@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="gjA-gn-Utn">
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ball1" translatesAutoresizingMaskIntoConstraints="NO" id="gjA-gn-Utn">
                                 <rect key="frame" x="67" y="294.66666666666669" width="241" height="222.66666666666669"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gjA-gn-Utn" secondAttribute="height" multiplier="133:123" id="hfu-Rg-TnR"/>
@@ -32,6 +32,9 @@
                                 <state key="normal" title="Ask">
                                     <color key="titleColor" red="0.2240941226" green="0.55641734600000003" blue="0.85699862240000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="askButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fif-4J-qaI"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ask me Anything ..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gVF-jk-yuF">
                                 <rect key="frame" x="67" y="154.66666666666666" width="241" height="33"/>
@@ -53,6 +56,9 @@
                             <constraint firstItem="gjA-gn-Utn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="tT7-fR-QZf"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="gjA-gn-Utn" id="MfR-ze-wVd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
